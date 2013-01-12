@@ -1,0 +1,11 @@
+// Import Compass and it's associated helpers
+@import "compass";
+@import "compass/reset";
+@import "compass/css3/pie";
+
+// Generic Compass configuration
+$legacy-support-for-ie6: false;
+$experimental-support-for-khtml: false;
+$experimental-support-for-opera: false;
+
+@import "promo";
