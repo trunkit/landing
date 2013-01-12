@@ -8,11 +8,6 @@
 
 	<div class="wrapper">
 		<%= form_tag(complete_path, remote: true) do %>
-			<p>
-				Share your answer to the question on the previous page via facebook, twitter, or email.<br >
-				The more people you share your answer with the more likely you'll win your gift!  :)
-			</p>
-
 			<div class="input">
 				<%= hidden_field_tag(:answer, params[:answer]) %>
 				<%= hidden_field_tag(:friends, params[:friends]) %>
