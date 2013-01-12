@@ -9,10 +9,11 @@
 			</p>
 
 			<div class="input">
-				<%= label_tag(:answer, "Enter emails separated by commas") %><br>
-				<%= label_tag(:answer, "Start typing&hellip;".html_safe, class: "i") %>
+				<%= hidden_field_tag(:answer, params[:answer]) %>
+				<%= label_tag(:friends, "Enter emails separated by commas") %><br>
+				<%= label_tag(:friends, "Start typing&hellip;".html_safe, class: "i") %>
 
-				<%= text_field_tag(:answer, "", placeholder: "emails") %>
+				<%= text_field_tag(:friends, "", placeholder: "emails") %>
 			</div>
 
 			<div class="right">

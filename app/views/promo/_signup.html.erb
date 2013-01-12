@@ -14,6 +14,9 @@
 			</p>
 
 			<div class="input">
+				<%= hidden_field_tag(:answer, params[:answer]) %>
+				<%= hidden_field_tag(:friends, params[:friends]) %>
+
 				<%= label_tag(:email, "Enter your email") %><br>
 				<%= label_tag(:email, "Start typing&hellip;".html_safe, class: "i") %>
 
