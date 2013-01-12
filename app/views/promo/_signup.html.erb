@@ -1,0 +1,28 @@
+<div id="landing">
+	<p>
+		Leave your email below. We'll only email you for one of three reasons&hellip;<br>
+		1. We've got your invite ready<br>
+		2. We've got some awesome news to share about Swayly<br>
+		3. We have a gift for you!<br>
+	</p>
+
+	<div class="wrapper">
+		<%= form_tag(complete_path, remote: true) do %>
+			<p>
+				Share your answer to the question on the previous page via facebook, twitter, or email.<br >
+				The more people you share your answer with the more likely you'll win your gift!  :)
+			</p>
+
+			<div class="input">
+				<%= label_tag(:email, "Enter your email") %><br>
+				<%= label_tag(:email, "Start typing&hellip;".html_safe, class: "i") %>
+
+				<%= text_field_tag(:email, "", placeholder: "your email address") %>
+			</div>
+
+			<div class="right">
+				<%= submit_tag("Share") %>
+			</div>
+		<% end %>
+	</div>
+</div>

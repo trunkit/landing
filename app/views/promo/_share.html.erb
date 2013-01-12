@@ -1,0 +1,23 @@
+<div id="landing">
+	<p>Everyone has an opinion that matters, so share it with the people who admire yours the most and start creating the perfect community for you.</p>
+
+	<div class="wrapper">
+		<%= form_tag(signup_path, remote: true) do %>
+			<p>
+				Share your answer to the question on the previous page via facebook, twitter, or email.<br >
+				The more people you share your answer with the more likely you'll win your gift!  :)
+			</p>
+
+			<div class="input">
+				<%= label_tag(:answer, "Enter emails separated by commas") %><br>
+				<%= label_tag(:answer, "Start typing&hellip;".html_safe, class: "i") %>
+
+				<%= text_field_tag(:answer, "", placeholder: "emails") %>
+			</div>
+
+			<div class="right">
+				<%= submit_tag("Share") %>
+			</div>
+		<% end %>
+	</div>
+</div>
