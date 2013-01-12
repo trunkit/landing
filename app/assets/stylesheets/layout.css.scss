@@ -4,6 +4,7 @@ body, input[type="text"] {
   font-size: 13px;
   font-stretch: normal;
   outline: none;
+  color: #353943;
 }
 
 .i { font-style: italic; }
@@ -18,7 +19,7 @@ body > header {
 
   > a {
     position: absolute;
-    top: -6px;
+    top: -3px;
     left: 50%;
     margin: 0 0 0 -96px;
   }

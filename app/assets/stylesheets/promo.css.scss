@@ -2,7 +2,7 @@
   > p {
     width: 960px;
     margin: 0 auto 40px;
-    font: 25px/32px Lucida Sans Unicode, Lucida Grande, sans-serif;
+    font: 22px/32px Lucida Sans Unicode, Lucida Grande, sans-serif;
     text-align: center;
   }
 
@@ -20,13 +20,14 @@
       > p {
         font-size: 18px;
         line-height: 22px;
-        font-weight: bold;
+        text-align: center;
+        color: #353943;
       }
 
       .input {
         margin: 10px 0 0;
         padding: 10px 0 0;
-        border-top: 1px dashed black;
+        border-top: 1px dashed #353943;
 
         label {
           font-size: 15px;
