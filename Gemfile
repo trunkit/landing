@@ -2,6 +2,8 @@ source :rubygems
 
 gem 'rails', '3.2.11'
 
+gem 'mongoid'
+
 gem 'jquery-rails'
 
 group :assets do
