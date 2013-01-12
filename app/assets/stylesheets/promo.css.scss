@@ -2,7 +2,7 @@
   > p {
     width: 960px;
     margin: 0 auto 40px;
-    font: 25px/40px Lucida Sans Unicode, Lucida Grande, sans-serif;
+    font: 25px/32px Lucida Sans Unicode, Lucida Grande, sans-serif;
     text-align: center;
   }
 
@@ -50,10 +50,11 @@
         padding: 20px 0 0;
 
         input {
-          padding: 10px;
+          min-width: 100px;
+          padding: 5px;
           border: none;
           @include border-radius(5px);
-          font-size: 18px;
+          font-size: 16px;
           font-weight: bold;
           color: #fff;
           background: #00B3FF;
@@ -61,5 +62,13 @@
         }
       }
     }
+  }
+}
+
+#landing.signup {
+  > .wrapper form .input {
+    margin: 0;
+    padding: 0;
+    border: none;
   }
 }
