@@ -61,4 +61,15 @@ SwaylyLanding::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
+  # Configure SMTP server
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.mandrillapp.com',
+    user_name:            'operations@swayly.com',
+    password:             '38fc9050-f86d-4edd-af61-507237aed27d',
+    authentication:       :plain,
+    domain:               'swayly.com',
+    enable_starttls_auto: true,
+    port:                 587
+  }
 end
