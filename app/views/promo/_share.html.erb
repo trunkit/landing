@@ -4,7 +4,7 @@
 	<div class="wrapper">
 		<%= form_tag(signup_path, remote: true) do %>
 			<p>
-				Share your answer to the question on the previous page via facebook, <%= link_to("Tweet", "https://twitter.com/share", :"data-text" => "@teamswayly - if u could have any gift up 2 $100 what would it be? I chose a #{params[:answer]}! Answer to win  @ http://swayly.com #mygift", :"data-count" => "none", class: "twitter-share-button") %>, or email.<br>
+				Share your answer to the question on the previous page via facebook, <%= link_to("Tweet", "https://twitter.com/share", :"data-text" => "@teamswayly - if u could have any gift up 2 $100 what would it be? I chose a #{params[:answer]}! Answer to win @ http://swayly.com #mygift", :"data-url" => "", :"data-count" => "none", class: "twitter-share-button") %>, or email.<br>
 				The more people you share your answer with the more likely you'll win your gift!  :)
 			</p>
 
