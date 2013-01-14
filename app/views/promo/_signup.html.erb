@@ -15,7 +15,7 @@
 				<%= label_tag(:email, "Enter your email") %><br>
 				<%= label_tag(:email, "Start typing&hellip;".html_safe, class: "i") %>
 
-				<%= text_field_tag(:email, "", placeholder: "your email address") %>
+				<%= text_field_tag(:email, "", placeholder: "your email address", autocomplete: "off") %>
 			</div>
 
 			<div class="right">

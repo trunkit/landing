@@ -13,7 +13,7 @@
 				<%= label_tag(:friends, "Enter emails separated by commas") %><br>
 				<%= label_tag(:friends, "Start typing&hellip;".html_safe, class: "i") %>
 
-				<%= text_field_tag(:friends, "", placeholder: "emails") %>
+				<%= text_field_tag(:friends, "", placeholder: "emails", autocomplete: "off") %>
 			</div>
 
 			<div class="right">
