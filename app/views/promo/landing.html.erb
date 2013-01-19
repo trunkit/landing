@@ -1,16 +1,16 @@
 <div id="landing">
-	<p>Experience the beauty of shopping with community. Swayly lets you share, discuss, and ask about products you've discovered online.</p>
+	<p><span>Swayly let's you share, discuss and ask about products you discover online.</span></p>
+	<p><span>Experience the beauty of shopping with community.</span></p>
 
 	<div class="wrapper">
 		<%= form_tag(share_path, remote: true) do %>
-			<p>We know the holiday season just passed and maybe you didn't get exactly what you wanted for Chrismahanuquanzakkah. If you could have any gift for $100 or less what would it be?
-You never know your wish may just come true&hellip;</p>
+			<p>We know the holiday season just passed and maybe you didn't get exactly what you wanted for Chrismahanuquanzakkah. <strong>If you could have any gift for $100 or less what would it be?</strong> You never know your wish may just come true&hellip;</p>
 
 			<div class="input">
-				<%= label_tag(:answer, "Enter your answer") %><br>
+				<%= label_tag(:answer, "Enter your answer (it must be shorter than 18 characters)") %><br>
 				<%= label_tag(:answer, "Start typing", class: "i") %>
 
-				<%= text_field_tag(:answer, "", placeholder: "answer", autocomplete: "off") %>
+				<%= text_field_tag(:answer, "", placeholder: "answer", autocomplete: "off", maxlength: 18) %>
 			</div>
 
 			<div class="right">
