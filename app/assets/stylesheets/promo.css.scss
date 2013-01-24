@@ -25,7 +25,7 @@
     float: left;
     width: 100%;
     min-height: 100px;
-    padding: 20px 0;
+    padding: 10px 0;
     background: rgba(255,255,255,.75);
 
     form {
@@ -33,7 +33,7 @@
       margin: 0 auto;
 
       > p, div.copy {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 22px;
         text-align: center;
         color: #353943;
@@ -55,7 +55,7 @@
           width: 100%;
           height: 100px;
           margin: 10px 0;
-          padding: 10px 0;
+          padding: 0;
           font-size: 100px;
           line-height: 120px;
           font-family: "HelveticaNeue-UltraLight";
@@ -81,7 +81,10 @@
           cursor: pointer;
         }
 
-        a { color: #00B3FF; }
+        a {
+          font-size: 16px;
+          color: #00B3FF;
+        }
       }
     }
   }
