@@ -2,16 +2,23 @@
   > p {
     clear: both;
     margin: 0 auto 40px;
-    font: 22px/32px Lucida Sans Unicode, Lucida Grande, sans-serif;
+    font: 22px/32px lato_lightregular, Lucida Sans Unicode, Lucida Grande, sans-serif;
     text-align: center;
 
     &:first-child { margin: 0 auto 20px; }
 
     span {
-      padding: 0 10px;
+      padding: 4px 10px;
       color: #fff;
       background: rgba(0, 178, 255, .62);
     }
+
+    &.white {
+      padding: 0 10%;
+      color: #fff;
+    }
+
+    &.left { text-align: left; }
   }
 
   > .wrapper {
@@ -25,11 +32,13 @@
       width: 960px;
       margin: 0 auto;
 
-      > p {
+      > p, div.copy {
         font-size: 18px;
         line-height: 22px;
         text-align: center;
         color: #353943;
+
+        > div.fb-like { display: inline-block; }
       }
 
       .input {
@@ -71,6 +80,8 @@
           background: #00B3FF;
           cursor: pointer;
         }
+
+        a { color: #00B3FF; }
       }
     }
   }

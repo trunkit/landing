@@ -1,12 +1,12 @@
 <div id="landing">
-	<p>Everyone has an opinion that matters, so share it with the people who admire yours the most and start creating the perfect community for you.</p>
+	<p class="white">Share your opinion with the people that admire yours the most and start creating the perfect shopping community.</p>
 
 	<div class="wrapper">
 		<%= form_tag(signup_path, remote: true) do %>
-			<p>
-				Share your answer to the question on the previous page via facebook, <%= link_to("Tweet", "https://twitter.com/share", :"data-text" => "@teamswayly - if u could have any gift up 2 $100 what would it be? I chose #{params[:answer]}! Answer to win. #mygift", :"data-url" => "", :"data-count" => "none", class: "twitter-share-button") %>, or email.<br>
+			<div class="copy">
+				Share your answer to the question on the previous page via <div class="fb-like" data-href="https://www.facebook.com/TeamSwayly" data-layout="button_count" data-width="450" data-show-faces="false"></div>, <%= link_to("Tweet", "https://twitter.com/share", :"data-text" => "@teamswayly - if u could have any gift up 2 $100 what would it be? I chose #{params[:answer]}! Answer to win. #mygift", :"data-url" => "", :"data-count" => "none", class: "twitter-share-button") %>, or email.<br>
 				The more people you share your answer with the more likely you'll win your gift!  :)
-			</p>
+			</div>
 
 			<div class="input">
 				<%= hidden_field_tag(:answer, params[:answer]) %>
@@ -17,14 +17,14 @@
 			</div>
 
 			<div class="right">
-				<%= submit_tag("Share") %>
+				<%= submit_tag("Share", class: "share") %> or <%= link_to("continue", "#", class: "continue") %>
 			</div>
 		<% end %>
 	</div>
 </div>
 
 <script type="text/javascript">
-$(function() { SiteBindings.promo(); });
+$(function() { SiteBindings.promo(); FB.XFBML.parse(); });
 </script>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
