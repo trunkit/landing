@@ -1,0 +1,15 @@
+<div id="invite">
+	<h1>We'll send you an invite as soon as we launch.</h1>
+	<span>Just leave your email below.</span>
+
+	<%= form_tag(complete_path) do %>
+		<%= email_field_tag(:email, "", class: "email") %>
+		<%= submit_tag("go", class: "submit") %>
+	<% end %>
+
+	<div class="cb"></div>
+</div>
+
+<script type="text/javascript">
+$(function() { SiteBindings.promo(); });
+</script>
