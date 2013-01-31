@@ -6,5 +6,6 @@ class PromoController < ApplicationController
   end
 
   def complete
+    PromoSignup.create(email: params[:email])
   end
 end
