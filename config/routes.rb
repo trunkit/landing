@@ -5,6 +5,7 @@ SwaylyLanding::Application.routes.draw do
   # Promo Steps
   get  "/invite"   => "promo#invite",   as: :invite
   post "/complete" => "promo#complete", as: :complete
+  get  "/complete" => redirect("/")
 
   # Content
   match "/login"   => "content#login"
