@@ -70,8 +70,8 @@ body {
   }
 }
 
-// Founders
-h1.founders {
+// Common content themes
+h1 {
   float: left;
   width: 100%;
   padding: 20px 0 0;
@@ -79,6 +79,7 @@ h1.founders {
   text-align: center;
 }
 
+// Founders
 .founder {
   float: left;
   width: 80%;
@@ -122,6 +123,59 @@ h1.founders {
       float: left;
       clear: left;
       padding: 0 0 10px;
+    }
+  }
+}
+
+// Login Form
+#login-form {
+  width: 441px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+
+  .left {
+    float: left;
+    width: 200px;
+    margin: 0 10px 0 0;
+
+    img { margin: 30px 0 0; }
+  }
+
+  .right {
+    float: left;
+    width: 200px;
+    padding: 30px 0 30px 10px;
+    border-left: 1px dashed #979797;
+
+    input.text {
+      float: left;
+      clear: left;
+      width: 172px;
+      height: 30px;
+      margin: 0 0 10px;
+      padding: 6px 10px 5px;
+      border: 0;
+      font-size: 20px;
+      line-height: 30px;
+      background: image-url("buttons/text-login-input.png");
+    }
+
+    a {
+      color: #FF192D;
+      text-decoration: none;
+    }
+
+    input[type=submit] {
+      width: 70px;
+      height: 26px;
+      margin: 0 0 0 15px;
+      padding: 0;
+      border: 0;
+      font-size: 14px;
+      background: #00B3FF;
+      color: #fff;
+
+      @include border-radius(4px);
     }
   }
 }

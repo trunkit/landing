@@ -1,0 +1,18 @@
+<h1 class="login">Experience beauty of shopping with community.<br>Swayly lets you share, discuss, and ask about<br>products you've discovered online.</h1>
+
+<div id="login-form">
+	<div class="left">
+		<%= link_to(image_tag("buttons/facebook-login.png"), "#", remote: true, class: "facebook") %>
+		<%= link_to(image_tag("buttons/twitter-login.png"), "#", remote: true, class: "twitter") %>
+	</div>
+
+	<div class="right">
+		<%= form_tag("#", remote: true) do %>
+			<%= email_field_tag(:email, "", placeholder: "email", class: "text") %>
+			<%= password_field_tag(:password, "", placeholder: "password", class: "text") %>
+
+			<%= link_to("forgot password?", "#") %>
+			<%= submit_tag("log in") %>
+		<% end %>
+	</div>
+</div>
