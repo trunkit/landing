@@ -10,6 +10,6 @@ production:
     default:
       database: swayly_landing_production
       hosts:
-        - linus.mongohq.com:10017
-      username: swayly
+        - dharma.mongohq.com:10064
+      username: trunkit
       password: homey6(eunuchs
