@@ -3,9 +3,7 @@ development:
     default:
       database: swayly_landing_development
       hosts:
-        - linus.mongohq.com:10016
-      username: swayly
-      password: homey6(eunuchs
+        - localhost:27017
 
 production:
   sessions:
