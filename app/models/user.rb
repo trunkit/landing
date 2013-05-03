@@ -1,5 +1,6 @@
 class User
   include Mongoid::Document
+  include ActiveModel::SecurePassword
 
   field :contact_name
   field :boutique_name
