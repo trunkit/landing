@@ -1,19 +1,20 @@
-source :rubygems
+source 'https://rubygems.org'
+ruby   '2.0.0'
 
-ruby '1.9.3'
+# Rails core
+gem 'rails', '4.0.0.rc1'
 
-gem 'rails', '3.2.11'
+# Persistance
+gem 'mongoid', github: 'mongoid/mongoid'
 
-gem 'mongoid'
+# For ActiveModel has_secure_password
+gem 'bcrypt-ruby', '~> 3.0.0'
 
+# Assets
 gem 'jquery-rails'
-
-group :assets do
-  gem 'compass-rails',    '>= 1.0.0'
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-end
+gem 'sass-rails',   '~> 4.0.0.rc1'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'uglifier',     '>= 1.3.0'
 
 group :production do
   gem 'newrelic_rpm'

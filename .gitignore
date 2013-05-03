@@ -20,7 +20,6 @@
 
 # Ignore the public assets
 /public/assets
-/public/vehicles
 
 # Ignore the local ruby gem file cache
 /vendor/bundle

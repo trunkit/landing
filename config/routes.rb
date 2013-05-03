@@ -1,4 +1,4 @@
-SwaylyLanding::Application.routes.draw do
+Landing::Application.routes.draw do
   # Promo Landing
   root :to         => "promo#landing", as: :landing
 
@@ -8,6 +8,6 @@ SwaylyLanding::Application.routes.draw do
   get  "/complete" => redirect("/")
 
   # Content
-  match "/login"   => "content#login"
-  match "/about"   => "content#about"
+  get "/login"   => "content#login"
+  get "/about"   => "content#about"
 end
