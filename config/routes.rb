@@ -1,13 +1,13 @@
 Landing::Application.routes.draw do
-  # Promo Landing
-  root :to         => "promo#landing", as: :landing
+  # Home
+  root to: "content#index"
 
-  # Promo Steps
-  get  "/invite"   => "promo#invite",   as: :invite
-  post "/complete" => "promo#complete", as: :complete
-  get  "/complete" => redirect("/")
+  # User
+  resources :users,    only: [:new, :create]
+  resource  :sessions, only: [:new, :create, :destroy]
 
-  # Content
-  get "/login"   => "content#login"
-  get "/about"   => "content#about"
+  # Brands leaderboard
+  resources :brands, only: [:new, :create] do
+    patch "vote" => "brands#upvote"
+  end
 end
