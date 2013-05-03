@@ -11,6 +11,7 @@ gem 'mongoid', github: 'mongoid/mongoid'
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Assets
+gem 'asset_sync'
 gem 'jquery-rails'
 gem 'sass-rails',   '~> 4.0.0.rc1'
 gem 'coffee-rails', '~> 4.0.0'
