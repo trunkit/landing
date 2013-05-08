@@ -1,4 +1,4 @@
 (function() {
   var html = "<%= j(render(template: 'sessions/new.html', layout: false)) %>";
-  $.fancybox({ content: html, padding: 0 });
+  $.fancybox({ content: html, padding: 0, wrapCSS: "modal-bg" });
 })();
