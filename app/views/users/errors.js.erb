@@ -1,4 +1,4 @@
 (function() {
-  var message = "<%= j(@user.errors.full_messages.join("\n")) %> ";
+  var message = "<%= j(@user.errors.full_messages.join("\n")).html_safe %> ";
   alert(message);
 })();
