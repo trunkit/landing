@@ -7,7 +7,7 @@ Landing::Application.routes.draw do
   resource  :sessions, only: [:new, :create, :destroy]
 
   # Brands leaderboard
-    patch "vote" => "brands#upvote"
   resources :brands, only: [:index, :new, :create] do
+    patch "vote" => "brands#vote"
   end
 end
