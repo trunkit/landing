@@ -8,7 +8,8 @@ class Brand
   field :contact_name, type: String
   field :votes,        type: Array, default: []
 
-  validates_presence_of :name, :email, :phone, :contact_name
+  validates_presence_of   :name, :email, :phone, :contact_name
+  validates_uniqueness_of :name
 
   def toggle_vote(user)
     if votes.include?(user.id)
