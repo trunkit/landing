@@ -10,6 +10,7 @@
     padding: 20px 0 30px;
     font: 57px/62px HelveticaNeue-UltraLight, sans-serif;
     text-align: center;
+    text-transform: uppercase;
   }
 
   form > div {
@@ -33,6 +34,8 @@
       border: 0;
       border-bottom: 1px solid #000;
       background: rgba(0,178,255,0.24);
+
+      &:focus { background: rgba(255,255,255,0.97); }
     }
   }
 
