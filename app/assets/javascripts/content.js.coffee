@@ -9,7 +9,7 @@ SiteBindings.home = ->
     currentSlide.fadeOut()
     nextSlide.fadeIn()
 
-  intervalID = setInterval advanceSlides, 4000
+  intervalID = setInterval advanceSlides, 8000
 
   $("#home > a").click ->
     clearInterval intervalID
