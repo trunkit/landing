@@ -8,7 +8,7 @@ development:
 production:
   sessions:
     default:
-      database: swayly_landing_production
+      database: trunkit_landing
       hosts:
         - dharma.mongohq.com:10064
       username: trunkit
