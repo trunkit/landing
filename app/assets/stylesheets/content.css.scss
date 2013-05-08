@@ -1,4 +1,19 @@
 #home {
+  > a {
+    position: absolute;
+    top: 280px;
+    width: 46px;
+    height: 46px;
+    background: image-url("left-arrow.png");
+    text-indent: -9999px;
+
+    &.left { left: 0; }
+    &.right {
+      right: 0;
+      background: image-url("right-arrow.png");
+    }
+  }
+
   header {
     h1 {
       position: relative;
