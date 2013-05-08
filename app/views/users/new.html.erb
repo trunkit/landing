@@ -1,0 +1,35 @@
+<div id="signup">
+	<h2>Sign Up</h2>
+
+	<%= form_for(@user, html: { remote: true }) do |f| %>
+		<div class="left">
+			<%= f.label(:boutique_name) %>
+			<%= f.text_field(:boutique_name, placeholder: "(required)") %>
+
+			<%= f.label(:website) %>
+			<%= f.text_field(:website, placeholder: "(optional)") %>
+
+			<%= f.label(:city) %>
+			<%= f.text_field(:city, placeholder: "(required)") %>
+
+			<%= f.label(:state) %>
+			<%= f.text_field(:state, placeholder: "(required)") %>
+		</div>
+
+		<div class="right">
+			<%= f.label(:contact_name) %>
+			<%= f.text_field(:contact_name, placeholder: "(required)") %>
+
+			<%= f.label(:email) %>
+			<%= f.text_field(:email, placeholder: "(required)") %>
+
+			<%= f.label(:password) %>
+			<%= f.password_field(:password, placeholder: "(required)") %>
+
+			<%= f.label(:password_confirmation) %>
+			<%= f.password_field(:password_confirmation, placeholder: "(required)") %>
+		</div>
+
+		<%= submit_tag("Sign Up") %>
+	<% end %>
+</div>
