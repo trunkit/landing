@@ -1,0 +1,20 @@
+<section id="brands">
+	<h1>
+		<div>
+			<span>TrunkIt</span>
+			<%= link_to("Add a Brand", new_brand_path, remote: true) %>
+		</div>
+	</h1>
+
+	<h2>Brands Leaderboard</h2>
+
+	<ol>
+		<% @brands.each do |brand| %>
+		<li>
+			<%= content_tag(:strong, brand.name) %> /<br>
+			<%= brand.votes.size %> votes
+			<%= vote_button(brand) %>
+		</li>
+		<% end %>
+	</ol>
+</section>

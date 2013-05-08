@@ -1,0 +1,26 @@
+<div id="signup">
+	<h2>Add a Brand</h2>
+
+	<%= form_for(@brand, html: { remote: true }) do |f| %>
+		<div class="left">
+			<%= f.label(:name, "Brand Name") %>
+			<%= f.text_field(:name, placeholder: "(required)") %>
+
+			<%= f.label(:website) %>
+			<%= f.text_field(:website, placeholder: "(optional)") %>
+
+			<%= f.label(:contact_name) %>
+			<%= f.text_field(:contact_name, placeholder: "(required)") %>
+		</div>
+
+		<div class="right">
+			<%= f.label(:email) %>
+			<%= f.text_field(:email, placeholder: "(required)") %>
+
+			<%= f.label(:phone, "Phone Number") %>
+			<%= f.text_field(:phone, placeholder: "(required)") %>
+		</div>
+
+		<%= submit_tag("Add Brand", style: "clear: both") %>
+	<% end %>
+</div>

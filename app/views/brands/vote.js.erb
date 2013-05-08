@@ -1,0 +1,3 @@
+(function() {
+  $("#brand-vote-<%= @brand.id %>").replaceWith("<%= j(vote_button(@brand)) %>")
+})();
