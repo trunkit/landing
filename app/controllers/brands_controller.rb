@@ -16,7 +16,7 @@ class BrandsController < ApplicationController
 
     if @brand.errors.blank?
       @brand.toggle_vote(current_user)
-      redirect_to(brands_path)
+      respond_to {|f| f.js { render(js: "window.location = '/';") }}
     else
       render(template: "brands/errors", layout: false)
     end

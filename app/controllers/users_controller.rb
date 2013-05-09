@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
     if @user.errors.blank?
       session[:user_id] = @user.id
-      redirect_to(brands_path)
+      respond_to {|f| f.js { render(js: "window.location = '/';") }}
     else
       render(template: "users/errors", layout: false)
     end
