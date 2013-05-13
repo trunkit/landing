@@ -11,7 +11,7 @@ SiteBindings.home = ->
 
   intervalID = setInterval advanceSlides, 8000
 
-  $("#home > a").click ->
+  $("#home > a").on "click touchstart" ->
     clearInterval intervalID
 
     currentSlide = slides.filter(":visible")
