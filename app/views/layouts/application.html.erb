@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TrunkIt - A fashion marketplace curated by boutiques and supplied by brands</title>
-	<%= stylesheet_link_tag		 "//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" %>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>Trunkit</title>
+  <%= stylesheet_link_tag "application", media: "all" %>
 
 	<%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" %>
   <%= javascript_include_tag "application" %>
-	<%= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.js" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -21,9 +19,9 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div id="container">
+<section class="container">
 	<%= yield %>
-</div>
+</section>
 
 </body>
 </html>
